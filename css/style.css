@@ -1,0 +1,144 @@
+body {
+  overflow-x: hidden;
+  color: #505962;
+}
+
+.service-wrap {
+  z-index: -999 !important;
+}
+
+.service-background {
+  padding: 5rem 0;
+  z-index: 1000 !important;
+  
+}
+#contact {
+  z-index: 1000;
+}
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  /* An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). */
+  top: 38%;
+  z-index: 1;
+  color: #343a40;
+  text-transform: uppercase;
+}
+#about hr {  
+  border-top: 2px solid #000;
+  
+}
+
+
+/*============= FOOTER =============*/
+.social{
+  list-style:none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  max-width: 15rem;
+  margin: 20px auto;
+  font-size: 2rem;
+ }
+.social i{
+  color: white;
+  }
+.social i:hover{
+color: red;
+}
+
+.footer {
+  background-color: #343a40;  
+ 
+}
+.footer .img-fluid{
+  max-width: 150px;
+}
+/*===== FIXED BACKGROUND IMG =====*/
+.fixed {
+  position: fixed;
+  /* The element is positioned relative to the viewport which means it always stays in the same place even if the page is scrolled.*/
+  display: block;
+  /* An element starts on a new line and takes the whole width. */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  /* The background image covers the entire container even if it's stretched or croped */
+  background-position: center center;
+}
+
+.fixed-background {
+  position: relative;
+  /* The element is positioned relative to its normal position + set the top, bottom... properties to adjust the position */
+  width: 100%;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  /*clip-path: inset(10%, 10%, 10%, 10%);*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.line {
+  width: 18%; 
+  margin: 5px auto;
+  border-top: 1px solid #000;
+  
+}
+.hr-separation {
+  margin: 30px auto;
+  border-top: 2px solid #000;
+}
+#contact hr {  
+  border-top: 2px solid #000;
+  
+}
+
+.navbar.active {
+  top: 0;
+  color: red;
+}
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (min-width: 1200px) {
+}
+/* Devices under 992px (lg) */
+@media (max-width: 992px) {
+  
+}
+/* Devices under 768px (md) */
+@media (max-width: 768px) {
+  .caption{
+    top: 20%;
+  }
+  .caption h1{
+    font-size: 2rem;
+  }
+  .caption h3{
+    font-size: 1.2rem;
+  }
+}
+/* Devices under 576px (sm) */
+@media (max-width: 576px) {
+  .caption{
+    top: 15%;
+  }
+  .caption h1{
+    font-size: 0.5rem;
+  }
+  .caption h3{
+    font-size: 1.2rem;
+  }
+
+
+}
